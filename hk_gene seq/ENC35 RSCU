@@ -1,0 +1,22 @@
+Phe UUU  128 0.28 Ser UCU   89 0.33 Tyr UAU   77 0.23 Cys UGU   78 0.30 
+    UUC  780 1.72     UCC  458 1.68     UAC  581 1.77     UGC  440 1.70 
+Leu UUA   10 0.02     UCA   73 0.27 TER UAA    9 0.35 TER UGA   44 1.71 
+    UUG   85 0.20     UCG  247 0.91     UAG   24 0.94 Trp UGG  284 1.00 
+
+    CUU   60 0.14 Pro CCU  146 0.37 His CAU   54 0.18 Arg CGU   94 0.32 
+    CUC  549 1.32     CCC  833 2.10     CAC  552 1.82     CGC  809 2.79 
+    CUA   62 0.15     CCA  153 0.39 Gln CAA   47 0.09     CGA   71 0.24 
+    CUG 1729 4.16     CCG  455 1.15     CAG  954 1.91     CGG  532 1.83 
+
+Ile AUU   87 0.33 Thr ACU   66 0.26 Asn AAU   75 0.26 Ser AGU   82 0.30 
+    AUC  689 2.61     ACC  557 2.18     AAC  513 1.74     AGC  685 2.52 
+    AUA   16 0.06     ACA  101 0.39 Lys AAA  128 0.21 Arg AGA   46 0.16 
+Met AUG  492 1.00     ACG  299 1.17     AAG 1117 1.79     AGG  190 0.65 
+
+Val GUU   35 0.10 Ala GCU  200 0.34 Asp GAU  169 0.29 Gly GGU  122 0.27 
+    GUC  331 0.90     GCC 1327 2.28     GAC  979 1.71     GGC 1152 2.51 
+    GUA   45 0.12     GCA  164 0.28 Glu GAA  179 0.21     GGA  111 0.24 
+    GUG 1054 2.88     GCG  642 1.10     GAG 1559 1.79     GGG  450 0.98 
+
+24169 codons in all_ENC35_hk_gen (used Universal Genetic code)
+
