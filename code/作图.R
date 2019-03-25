@@ -4,8 +4,8 @@ library('reshape2')
 library('corrplot')
 
 # 读入CodonW处理CDS后生成的原始文件
-data1 <- read.table(file = 'D:/学习/毕设/数据/hk_gene seq/密码子偏好相关参数1.txt', header = T)
-data2 <- read.table(file = 'D:/学习/毕设/数据/hk_gene seq/密码子偏好相关参数2.txt', header = T)
+data1 <- read.table(file = 'D:/学习/毕设/数据/data/全基因组/密码子偏好相关参数1.txt', header = T)
+data2 <- read.table(file = 'D:/学习/毕设/数据/data/全基因组/密码子偏好相关参数2.txt', header = T)
 
 # 合并数据集
 names(data1)[names(data1) == 'title'] <- c('Gene_description')
@@ -15,7 +15,7 @@ data3 <- merge(x = data1, y = data2, by = 'Gene_description')
 data3 <- transform(data3, GC12 = (GC1 + GC2)/2)
 
 data3 <- subset(data3, select = -CAI)
-new_cai <- read.table(file = 'D:/学习/毕设/数据/hk_gene seq/CAI.txt', header = T) 
+new_cai <- read.table(file = 'D:/学习/毕设/数据/data/全基因组/CAI.txt', header = T) 
 names(new_cai)[names(new_cai) == 'FastaHeader'] <- c('Gene_description')
 data3 <- merge(x = data3, y = new_cai, by = 'Gene_description')
 
@@ -77,14 +77,14 @@ cor.test(x = data3$GC12, y = data3$GC3s.x, method = 'spearman', exact = F)
 #########################对应分析#########################
 
 # 每轴贡献率
-inertia <- read.table(file = 'D:\\学习\\毕设\\数据\\hk_gene seq\\对应分析\\Correspondence analysis results from [CodonW] on data 2\\前40轴相对和累积贡献率.txt', header = T)
+inertia <- read.table(file = 'D:\\学习\\毕设\\数据\\data\\对应分析\\Correspondence analysis results from [CodonW] on data 2\\前40轴相对和累积贡献率.txt', header = T)
 ggplot(inertia, aes(x = factor(Num.), y = R.Iner.)) +
   theme(axis.line = element_line(colour = 'black')) +
   xlab('轴') + ylab('相对贡献率') +
   geom_bar(stat = 'identity')
 
 # 密码子第三位碱基的一二轴分布
-codon.coa <- read.csv(file = 'D:\\学习\\毕设\\数据\\hk_gene seq\\对应分析\\每密码子前四轴分布2.csv', header = T)
+codon.coa <- read.csv(file = 'D:\\学习\\毕设\\数据\\data\\对应分析\\每密码子前四轴分布2.csv', header = T)
 ggplot(codon.coa, aes(x = Axis1, y = Axis2, shape = factor(type))) +
   theme(axis.line = element_line(colour = 'black')) +
   geom_hline(yintercept = 0) + geom_vline(xintercept = 0) +
@@ -93,7 +93,7 @@ ggplot(codon.coa, aes(x = Axis1, y = Axis2, shape = factor(type))) +
   theme(text = element_text(family = 'SimSun'))
 
 # 汇总COA数据
-cds.coa <- read.table(file = 'D:\\学习\\毕设\\数据\\hk_gene seq\\对应分析\\Correspondence analysis results from [CodonW] on data 2\\每个CDS 4轴.txt', header = T)
+cds.coa <- read.table(file = 'D:\\学习\\毕设\\数据\\data\\对应分析\\Correspondence analysis results from [CodonW] on data 2\\每个CDS 4轴.txt', header = T)
 names(cds.coa)[names(cds.coa) == 'label'] <- c('Gene_description')
 cds.coa2 <- merge(x = cds.coa, y = data3, by = 'Gene_description')
 
@@ -113,12 +113,14 @@ data3 <- data3[order(data3$Nc),]
 tail.enc <- as.character(head(x = data3$Gene_description, n = nrow(data3) * 0.1))
 head.enc <- as.character(tail(x = data3$Gene_description, n = nrow(data3) * 0.1))
 
-write.table(x = head.enc, file = 'D:/学习/毕设/数据/hk_gene seq/ENC极端高 基因.txt', row.names = F, quote = F)
-write.table(x = tail.enc, file = 'D:/学习/毕设/数据/hk_gene seq/ENC极端低 基因.txt', row.names = F, quote = F)
+write.table(x = head.enc, file = 'D:/学习/毕设/数据/data/极端ENC/ENC极端高 基因.txt', row.names = F, quote = F)
+write.table(x = tail.enc, file = 'D:/学习/毕设/数据/data/极端ENC/ENC极端低 基因.txt', row.names = F, quote = F)
 
 
 #########################获取低ENC高GC基因#########################
-Lowenc.Lowgc <- subset(x = data3, subset = GC3s.x<0.3 & Nc<45, select = c(Gene_description, GC3s.x, Nc))
-write.table(x = Lowenc.Lowgc$Gene_description, file = 'D:/学习/毕设/数据/whole genome/GC3s.x0.3 Nc45 acc.txt', quote = F, row.names = F)
-Lowenc.Highgc <- subset(x = data3, subset = GC3s.x>0.8 & Nc<35, select = c(Gene_description, GC3s.x, Nc))
-write.table(x = Lowenc.Highgc$Gene_description, file = 'D:/学习/毕设/数据/whole genome/GC3s.x0.8 Nc35 acc.txt', quote = F, row.names = F)
+
+Lowenc.Lowgc <- subset(x = data3, subset = GC3s.x<0.3 & Nc<49, select = c(Gene_description, GC3s.x, Nc))
+write.table(x = Lowenc.Lowgc$Gene_description, file = 'D:/学习/毕设/数据/data/HELA/GC3s.x0.3 Nc49 acc.txt', quote = F, row.names = F)
+Lowenc.Highgc <- subset(x = data3, subset = GC3s.x>0.8 & Nc<36, select = c(Gene_description, GC3s.x, Nc))
+write.table(x = Lowenc.Highgc$Gene_description, file = 'D:/学习/毕设/数据/data/HELA/GC3s.x0.8 Nc36 acc.txt', quote = F, row.names = F)
+
