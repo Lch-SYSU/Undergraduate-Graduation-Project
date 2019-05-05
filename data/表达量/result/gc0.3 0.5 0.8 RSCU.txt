@@ -1,0 +1,66 @@
+Phe UUU 2138 1.50 Ser UCU 1993 1.76 Tyr UAU 1397 1.41 Cys UGU 1019 1.42 
+    UUC  711 0.50     UCC  609 0.54     UAC  586 0.59     UGC  418 0.58 
+Leu UUA 1590 1.42     UCA 1741 1.54 TER UAA   47 1.28 TER UGA   43 1.17 
+    UUG 1335 1.19     UCG  131 0.12     UAG   20 0.55 Trp UGG  690 1.00 
+
+    CUU 1634 1.46 Pro CCU 1750 1.67 His CAU 1390 1.50 Arg CGU  391 0.63 
+    CUC  490 0.44     CCC  490 0.47     CAC  469 0.50     CGC  144 0.23 
+    CUA  767 0.69     CCA 1804 1.72 Gln CAA 1874 0.97     CGA  528 0.84 
+    CUG  899 0.80     CCG  142 0.14     CAG 1996 1.03     CGG  254 0.41 
+
+Ile AUU 2039 1.56 Thr ACU 1579 1.49 Asn AAU 2740 1.42 Ser AGU 1607 1.42 
+    AUC  629 0.48     ACC  606 0.57     AAC 1124 0.58     AGC  720 0.64 
+    AUA 1245 0.95     ACA 1883 1.77 Lys AAA 4046 1.33 Arg AGA 1751 2.80 
+Met AUG 1755 1.00     ACG  185 0.17     AAG 2021 0.67     AGG  683 1.09 
+
+Val GUU 1651 1.49 Ala GCU 1775 1.60 Asp GAU 3202 1.49 Gly GGU 1229 1.15 
+    GUC  498 0.45     GCC  719 0.65     GAC 1106 0.51     GGC  643 0.60 
+    GUA 1219 1.10     GCA 1800 1.63 Glu GAA 4767 1.47     GGA 1913 1.79 
+    GUG 1059 0.96     GCG  132 0.12     GAG 1700 0.53     GGG  494 0.46 
+
+78010 codons in        gc0.3_cds (used Universal Genetic code)
+
+Phe UUU  674 1.09 Ser UCU  566 1.32 Tyr UAU  527 1.10 Cys UGU  337 1.04 
+    UUC  564 0.91     UCC  463 1.08     UAC  435 0.90     UGC  308 0.96 
+Leu UUA  404 0.72     UCA  434 1.01 TER UAA   45 1.21 TER UGA   45 1.21 
+    UUG  588 1.05     UCG  174 0.41     UAG   22 0.59 Trp UGG  404 1.00 
+
+    CUU  598 1.07 Pro CCU  596 1.26 His CAU  401 1.02 Arg CGU  219 0.66 
+    CUC  538 0.96     CCC  474 1.01     CAC  386 0.98     CGC  269 0.81 
+    CUA  313 0.56     CCA  552 1.17 Gln CAA  534 0.67     CGA  289 0.87 
+    CUG  919 1.64     CCG  264 0.56     CAG 1071 1.33     CGG  369 1.11 
+
+Ile AUU  642 1.21 Thr ACU  503 1.16 Asn AAU  688 1.07 Ser AGU  451 1.05 
+    AUC  596 1.13     ACC  509 1.18     AAC  600 0.93     AGC  478 1.12 
+    AUA  349 0.66     ACA  526 1.22 Lys AAA 1119 1.00 Arg AGA  455 1.37 
+Met AUG  851 1.00     ACG  192 0.44     AAG 1112 1.00     AGG  387 1.17 
+
+Val GUU  508 0.99 Ala GCU  719 1.16 Asp GAU 1017 1.17 Gly GGU  410 0.75 
+    GUC  424 0.83     GCC  745 1.20     GAC  727 0.83     GGC  658 1.20 
+    GUA  345 0.68     GCA  652 1.05 Glu GAA 1448 1.07     GGA  643 1.17 
+    GUG  767 1.50     GCG  362 0.58     GAG 1257 0.93     GGG  490 0.89 
+
+34412 codons in        gc0.5_cds (used Universal Genetic code)
+
+Phe UUU  216 0.30 Ser UCU  173 0.37 Tyr UAU  133 0.27 Cys UGU  157 0.35 
+    UUC 1248 1.70     UCC  827 1.77     UAC  868 1.73     UGC  736 1.65 
+Leu UUA   13 0.02     UCA  153 0.33 TER UAA   12 0.33 TER UGA   57 1.55 
+    UUG  162 0.23     UCG  387 0.83     UAG   41 1.12 Trp UGG  457 1.00 
+
+    CUU  117 0.17 Pro CCU  308 0.45 His CAU  110 0.21 Arg CGU  157 0.33 
+    CUC  944 1.36     CCC 1400 2.06     CAC  943 1.79     CGC 1250 2.64 
+    CUA  104 0.15     CCA  298 0.44 Gln CAA   84 0.10     CGA  135 0.29 
+    CUG 2836 4.07     CCG  714 1.05     CAG 1603 1.90     CGG  895 1.89 
+
+Ile AUU  153 0.34 Thr ACU  122 0.29 Asn AAU  124 0.24 Ser AGU  140 0.30 
+    AUC 1162 2.59     ACC  890 2.11     AAC  913 1.76     AGC 1125 2.41 
+    AUA   29 0.06     ACA  198 0.47 Lys AAA  214 0.23 Arg AGA   65 0.14 
+Met AUG  823 1.00     ACG  477 1.13     AAG 1677 1.77     AGG  340 0.72 
+
+Val GUU   67 0.11 Ala GCU  350 0.38 Asp GAU  274 0.29 Gly GGU  207 0.28 
+    GUC  612 0.99     GCC 2142 2.30     GAC 1587 1.71     GGC 1831 2.47 
+    GUA   68 0.11     GCA  280 0.30 Glu GAA  260 0.19     GGA  181 0.24 
+    GUG 1729 2.79     GCG  946 1.02     GAG 2447 1.81     GGG  752 1.01 
+
+39723 codons in        gc0.8_cds (used Universal Genetic code)
+
